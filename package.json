@@ -1,0 +1,32 @@
+{
+  "name": "live-coding5",
+  "version": "0.0.1",
+  "description": "",
+  "private": true,
+  "main": "app.js",
+  "scripts": {
+    "lint": "node ./node_modules/eslint/bin/eslint ./*.js ./**/*.js",
+    "lint:fix": "node ./node_modules/eslint/bin/eslint --fix ./*.js ./**/*.js",
+    "start": "./node_modules/pm2/bin/pm2 start ecosystem.config.js --no-daemon",
+    "test": "test"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "express": "^4.15.3",
+    "http-status-codes": "^1.1.6",
+    "mongoose": "4.9.7",
+    "mongoose-schema-extend": "0.2.2",
+    "morgan": "^1.8.2",
+    "pm2": "^2.6.1",
+    "sequelize": "^4.4.2",
+    "sqlite3": "^3.1.8",
+    "winston": "^2.3.1"
+  },
+  "devDependencies": {
+    "eslint": "^4.2.0",
+    "eslint-config-airbnb-base": "^11.2.0",
+    "eslint-plugin-import": "^2.7.0"
+  }
+}
